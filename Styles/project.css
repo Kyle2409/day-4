@@ -1,0 +1,190 @@
+
+  #projects{
+    height: 130vh;
+    background-color:#efcb8d;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+      }
+      #projects .about{
+          padding-left: 255px;
+          padding-top: 140px;
+          text-transform: uppercase;
+      }
+
+      #projects .shadow{
+          box-shadow: none !important;
+         
+          padding-left: 30px;
+          font-size: 120px;
+          line-height: 1;
+          font-weight: 900;
+          color: rgba(#858585);
+          display: inline-block;
+          text-transform: uppercase;
+          z-index: -1;
+          transform: translateY(-40%);
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          white-space: nowrap;
+      }
+      #projects h1 {
+          
+          font-size: 100px;
+        margin-bottom: -5px;
+        color: #ff5e14;
+        text-align: left;
+        
+      }
+      
+      #projects .cardBox {
+        float: left;
+        font-size: 1.2em;
+        margin: 1% 0 0 1%;
+        perspective: 800px;
+        transition: all 0.3s ease 0s;
+        width: 23.7%;
+      }
+      
+      #projects .cardBox:hover .card {
+        transform: rotateY( 180deg);
+      }
+      
+      #projects .card {
+        /* background: #222; */
+        cursor: default;
+        height: 300px;
+        border-radius: 100px;
+        transform-style: preserve-3d;
+        transition: transform 0.4s ease 0s;
+        width: 100%;
+        -webkit-animation: giro 1s 1;
+        animation: giro 1s 1;
+        
+      }
+      
+      #projects .card p {
+        margin-bottom: 1.8em;
+      }
+      
+      #projects .card .front,
+      #projects .card .back {
+        backface-visibility: hidden;
+        box-sizing: border-box;
+        color: white;
+        display: block;
+        font-size: 1.2em;
+        border-radius: 100px;
+        height: 100%;
+        padding: 0.8em;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+      
+      #projects .card .front strong {
+        background: #fff;
+        border-radius: 100px;
+        color: #222;
+        font-size: 1.5em;
+        line-height: 30px;
+        padding: 0 7px 4px 6px;
+      }
+      
+      #projects .card .back {
+        transform: rotateY( 180deg);
+      }
+      
+      #projects.card .back a {
+        padding: 0.3em 0.5em;
+        background: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 1px;
+        font-size: 0.9em;
+        transition: all 0.2s ease 0s;
+      }
+      
+      #projects.card .back a:hover {
+        background: #fff;
+        color: #333;
+        text-shadow: 0 0 1px #333;
+      }
+      
+      #projects .cardBox:nth-child(1) .card .back {
+        background:url(Images/Screenshot\ from\ 2021-10-27\ 11-00-24.png);
+        background-size: cover;
+      }
+      
+      #projects .cardBox:nth-child(2) .card .back {
+        background:url(Images/Screenshot\ from\ 2021-10-27\ 11-00-24.png);
+        background-size: cover;
+    }
+      
+      #projects .cardBox:nth-child(3) .card .back {
+        background:url(Images/Screenshot\ from\ 2021-10-27\ 11-00-24.png);
+        background-size: cover;
+    }
+      
+      #projects .cardBox:nth-child(4) .card .back {
+        background:url(Images/Screenshot\ from\ 2021-10-27\ 11-00-24.png);
+        background-size: cover;
+    }
+      
+      #projects .cardBox:nth-child(2) .card {
+        -webkit-animation: giro 1.5s 1;
+        animation: giro 1.5s 1;
+      
+    }
+      
+      #projects .cardBox:nth-child(3) .card {
+        -webkit-animation: giro 2s 1;
+        animation: giro 2s 1;
+      }
+      
+      #projects .cardBox:nth-child(4) .card {
+        -webkit-animation: giro 2.5s 1;
+        animation: giro 2.5s 1;
+      }
+      
+      @-webkit-keyframes giro {
+        from {
+          transform: rotateY( 180deg);
+        }
+        to {
+          transform: rotateY( 0deg);
+        }
+      }
+      
+      @keyframes giro {
+        from {
+          transform: rotateY( 180deg);
+        }
+        to {
+          transform: rotateY( 0deg);
+        }
+      }
+      
+      @media screen and (max-width: 767px) {
+        #projects .cardBox {
+          margin-left: 2.8%;
+          margin-top: 3%;
+          width: 46%;
+        }
+        #projects .card {
+          height: 285px;
+        }
+        #projects .cardBox:last-child {
+          margin-bottom: 3%;
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        #projects .cardBox {
+          width: 94.5%;
+        }
+        #projects .card {
+          height: 260px;
+        }
+      }
