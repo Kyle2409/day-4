@@ -153,18 +153,27 @@
     padding-top: 10px;
     padding-right: 50px;
   }
+  #about h1{
+    padding-left: 70px;
+  }
+  #about .pict{
+    text-align: center;
+    padding-left: 60px;
+  }
   #about .block-reveals {
     --t: calc(var(--td) + var(--d));
   display: initial;
     color: transparent;
     padding: 4px;
-  
+  padding-left: 80px;
     position: relative;
     overflow: hidden;
   
     animation: revealBlock 5s var(--t) forwards;
   }
-  
+  #about p{
+    text-align: center;
+  }
   #about .block-reveal {
     --t: calc(var(--td) + var(--d));
   display: none;
@@ -299,72 +308,7 @@
    color: black !important;
  }
 
-.testimonial_section {
-  height: 100vh;
-  background-color:#efcb8d;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-}
-.testimonial_section:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-#about.about.about_content {
-  
-  padding-right: 510px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  position: relative;
-}
-.testimonial_section .about_content .layer_content .section_title:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-.testimonial_section .about_content .layer_content .section_title h5 {
-  color: rgb(17, 9, 9);
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 28px;
-  color: #818a8f;
-  margin-top: -5px;
-  margin-bottom: 6px;
-}
-.testimonial_section .about_content .layer_content .section_title h2 {
-  font-family: "Titillium Web";
-  font-weight: 300;
-  font-size: 45px;
-  line-height: 50px;
-  padding-bottom: 51px;
-  margin-bottom: 0px;
-  color: #fff;
-}
-.testimonial_section .about_content .layer_content .section_title h2 strong {
-  font-weight: 600 !important;
-  width: 100%;
-  display: block;
-}
-.testimonial_section .about_content .layer_content .section_title .heading_line {
-  position: relative;
-}
-.testimonial_section .about_content .layer_content .section_title .heading_line span {
-  transition: all 0.5s ease-in-out 0s;
-  position: relative;
-}
-.testimonial_section .about_content .layer_content .section_title .heading_line span:after {
-  content: "";
-  right: auto;
-  left: 69px;
-  position: absolute;
-  bottom: 28px;
-  width: 17px;
-  margin-left: 0;
-  border-bottom-width: 3px;
-  border-bottom-color: #cacaca;
-  border-bottom-style: solid;
-}
+
 #about .about .testimonial_box .testimonial_container .testimonials .images_box {
   display: none;
 }
